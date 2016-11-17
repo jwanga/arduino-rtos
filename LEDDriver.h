@@ -12,7 +12,7 @@
  * Example sensor class
  */
 class LEDDriver : public IObserver { 
-  private:   
+  private:       
   public :
     LEDDriver();
     void On(SetupMessage message);

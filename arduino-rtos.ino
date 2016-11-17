@@ -10,8 +10,6 @@
 
 LEDDriver ledDriver = LEDDriver();
 
-char buf[100];
-
 void setup() {
   SetupMessage setupMessage;
   

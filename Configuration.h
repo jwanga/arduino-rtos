@@ -11,6 +11,6 @@
 */
 
 //Pin assignments
-static const short LED_PIN = 3;
+static const short LED_PIN = 1;
 
 #endif
