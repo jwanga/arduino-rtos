@@ -3,7 +3,7 @@
 #define CONFIGURATION_H_
 
 #include <avr/pgmspace.h>
-#include <StandardCplusplus.h>
+#include <ArduinoSTL.h>
 
 
 /**

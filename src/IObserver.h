@@ -4,7 +4,7 @@
 *Contains all configuration constants.
 */
 
-#include <StandardCplusplus.h>
+#include <ArduinoSTL.h>
 #include <functional>
 
 #include "Arduino.h"
@@ -16,11 +16,11 @@ class IObserver {
     virtual void On(SetupMessage message) {};
 
     /**
-	* Executes the  
+	* Executes the
 	*/
 	template<typename F>
 	void throttle(unsigned long interval, unsigned long &lastUpdatedTime, F lambda) {
-		
+
 		Serial.println(millis() - lastUpdatedTime);
 		if (millis() - lastUpdatedTime > interval) {
 			Serial.println("updated");
@@ -28,7 +28,7 @@ class IObserver {
 			lastUpdatedTime = millis();
 		}
 	}
-}; 
+};
 
 
 #endif

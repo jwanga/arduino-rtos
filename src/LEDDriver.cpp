@@ -1,5 +1,5 @@
-#include <StandardCplusplus.h>
-#include <string> 
+#include <ArduinoSTL.h>
+#include <string>
 
 #include "Command.h"
 #include "LEDDriver.h"
@@ -19,5 +19,5 @@ void LEDDriver::On(SetupMessage message){
 };
 
 void LEDDriver::On(LoopMessage message){
-  digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level) 
+  digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
 };
